@@ -1,0 +1,151 @@
+* {
+    flex: 0 0 0%;
+    flex-flow: row nowrap;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chat-container {
+    flex: 1 1 0%;
+    display: flex;
+}
+
+#chat-window {
+    flex: 3 0 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+#side-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+#conversation-list {
+    flex: 1 0 0%;
+}
+
+#search-container {
+    flex: 0 0 71px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-container input {
+    flex: 0 0 30px;
+}
+
+#new-message-container {
+    flex: 0 0 78px;
+    display: flex;
+    align-items: center;
+}
+
+#new-message-container a {
+    flex: 0 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#chat-message-list {
+    flex: 1 0 0%;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+}
+
+#chat-title {
+    flex: 0 0 71px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trash-logo {
+    flex: 0 0 36px;
+}
+
+#chat-title span {
+    flex: 1 0 0%;
+}
+
+#chat-form {
+    flex: 0 0 78px;
+    display: flex;
+    align-items: center;
+}
+
+#attachment-logo {
+    flex: 0 0 32px;
+}
+
+#chat-form input {
+    flex: 1 0 0%;
+}
+
+.conversation {
+    display: flex;
+}
+
+.conversation-details {
+    flex: 1 0 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+.conversation-title {
+    flex: 1 0 0%;
+    display: flex;
+    align-items: center;
+}
+
+.conversation-title .title-text {
+    flex: 1 0 0%;
+}
+
+.conversation-message {
+    flex: 0 0 auto;
+}
+
+.message-row {
+    display: flex;
+    flex: 0 0 auto;
+}
+
+.message-container {
+    flex: 0 0 70%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.you-message .message-container .user-picture-container:nth-child(odd) {
+    margin-right: 0;
+    margin-left: 15px;
+    order: 0;
+}
+
+.you-message .message-container .message-details {
+    order: -1;
+}
+
+.message-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0%;
+}
+
+.you-message .message-text,
+.you-message .message-time {
+    align-self: flex-end;
+}
+
+.you-message {
+    justify-content: flex-end;
+}
